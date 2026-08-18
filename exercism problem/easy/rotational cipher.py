@@ -1,0 +1,13 @@
+#agin just copy-pasted from website didn't knew what top do here...
+
+def rotate(text, key):
+    result = ""
+    for letter in text:
+        if letter.isalpha():
+            if letter.isupper():
+                result += chr((ord(letter) - 65 + key) % 26 + 65)
+            else:
+                result += chr((ord(letter) - 97 + key) % 26 + 97)
+        else:
+            result += letter
+    return result

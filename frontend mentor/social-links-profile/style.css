@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 8%);      /* Grey 900 */
+    font-family: 'Inter', sans-serif;
+    padding: 16px;                         /* Prevents card touching edges on small screens */
+}
+
+/* ─── CARD ─── */
+.card {
+    width: 100%;
+    max-width: 384px;
+    padding: 24px;
+    border-radius: 12px;
+    background-color: hsl(0, 0%, 12%);     /* Grey 800 */
+}
+
+/* ─── CONTENT ─── */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ─── PROFILE ─── */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+
+.location {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(75, 94%, 57%);              /* Green */
+}
+
+/* ─── DESCRIPTION ─── */
+.description {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+/* ─── SOCIAL LINKS ─── */
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    list-style: none;
+}
+
+.social li {
+    width: 100%;
+}
+
+.crax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 20%);      /* Grey 700 */
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* ─── HOVER & FOCUS ─── */
+.crax:hover,
+.crax:focus {
+    background-color: hsl(75, 94%, 57%);    /* Green */
+    color: hsl(0, 0%, 8%);                  /* Grey 900 */
+    outline: none;                          /* Remove default outline since we have color change */
+}
+
+/* ─── RESPONSIVE ─── */
+
+/* Tablet & small desktop */
+@media (min-width: 600px) {
+    .card {
+        max-width: 420px;
+        padding: 32px;
+        border-radius: 14px;
+    }
+    .profile img {
+        width: 96px;
+        height: 96px;
+    }
+    .name {
+        font-size: 26px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .card {
+        max-width: 450px;
+        padding: 40px;
+        border-radius: 16px;
+    }
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
+    .name {
+        font-size: 28px;
+    }
+    .crax {
+        padding: 14px 0;
+        font-size: 15px;
+    }
+}
