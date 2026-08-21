@@ -1,6 +1,6 @@
-# Frontend Mentor - Results summary component
+# Frontend Mentor - Product preview card component
 
-![Design preview for the Results summary component coding challenge](./preview.jpg)
+![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
@@ -12,17 +12,14 @@ Thanks for checking out this front-end coding challenge.
 
 ## The challenge
 
-Your challenge is to build out this results summary component and get it looking as close to the design as possible.
+Your challenge is to build out this product preview card component and get it looking as close to the design as possible.
 
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-We provide the data for the results in a local `data.json` file. So you can use that to add the results and total score dynamically if you choose.
-
 Your users should be able to:
 
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-- **Bonus**: Use the local JSON data to dynamically populate the content
+- View the optimal layout depending on their device's screen size
+- See hover and focus states for interactive elements
 
 ### Want some support on the challenge? 
 
@@ -36,9 +33,7 @@ The designs are in JPG static format. Using JPGs will mean that you'll need to u
 
 If you would like the Figma design file to gain experience using professional tools and build more accurate projects faster, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
-
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+You will find all the required assets in the `/images` folder. The assets are already optimized.
 
 There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
 
