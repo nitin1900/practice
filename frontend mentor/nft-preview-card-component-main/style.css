@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(217, 54%, 11%);
+    font-family: "Outfit";
+    color: white;
+}
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    padding: 2rem;
+    position: relative;
+    margin: 0;
+    border-radius: 32px;
+
+    width: 350px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.give:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+#pog{
+    color: hsl(215, 51%, 70%);
+
+    font-size: 18px;
+}
+
+.img{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+#bg{
+    width: 100%;
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(178, 100%, 50%, 0.5);
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img:hover .overlay {
+    opacity: 1;
+}
+/* ai */
+.pd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid hsl(215, 32%, 27%); /* separator line from style guide */
+}
+
+.price, .date {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.price p {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.date p {
+    color: hsl(215, 51%, 70%);
+}
+/* ai */
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 2rem;
+    gap: 8px;
+}
+
+#pp{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
