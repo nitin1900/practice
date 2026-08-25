@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display",sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: hsl(225, 100%, 94%);
+    min-height: 100vh;
+
+    /* position: relative; */
+
+    background-image: url(images/pattern-background-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10; */
+
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 2.5rem;
+
+    /* min-width: 180vh; */
+}
+
+#ima{
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    width: 400px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan{
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    gap: 60px;
+}
+
+.plan a{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.temp{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.temp2{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 15px;
+}
+
+#purple{
+    height: 2.5rem;
+    width: 80%;
+    border-radius: 0.5rem;
+    font-weight: 900;
+    background-color: white;
+    color: black;
+}
+
+#purple:hover{
+    height: 2.5rem;
+    width: 80%;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#white{
+    padding-bottom: 3rem;
+    height: 2rem;
+    width: 80%;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
