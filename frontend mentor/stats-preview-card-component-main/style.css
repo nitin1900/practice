@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&Lexend-Deca:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0b0d1c;
+    font-family: "Inter";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: hsl(244, 37%, 16%);
+    gap: 100px;
+    padding-left: 50px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+#highlight{
+    color: hsl(277, 64%, 61%);
+}
+
+.text2{
+    font-family: "Lexend-Deca";
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.text3{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+/* #imgc{
+    filter: sepia(100%) saturate(300%) hue-rotate(250deg) brightness(90%) contrast(110%);
+}
+
+make it background image to work mask ahh idk man*/
+
+/* below code from ai */
+.image-wrapper {
+  position: relative;
+  display: inline-block; /* Or specific width/height */
+  overflow: hidden;
+}
+
+.bw-image {
+  display: block;
+  width: 100%;
+  /* Ensure the image is strictly grayscale if it isn't already */
+  filter: grayscale(100%); 
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Your target HSL color */
+  background-color: hsl(277, 64%, 61%);
+  /* 'multiply' keeps the dark parts of the image and tints them with the overlay color.
+     'screen' or 'overlay' can also be used depending on desired effect. */
+  mix-blend-mode: multiply; 
+  pointer-events: none; /* Allows clicking through to the image if needed */
+}
