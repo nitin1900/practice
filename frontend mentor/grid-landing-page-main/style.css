@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2f55f5;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    height: 72px;
+    padding: 0 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navbar > span {
+    font-size: 14px;
+}
+
+.menu-wrap {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    width: 20px;
+    cursor: pointer;
+}
+
+/* ================= MAIN SECTION ================= */
+
+section {
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: 45% 55%;
+
+    min-height: 655px;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    padding: 0 48px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hero .he h1 {
+    font-size: 60px;
+    line-height: 1.06;
+    font-weight: 400;
+    letter-spacing: -2.5px;
+}
+
+.content {
+    margin-top: 42px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* ================= STAT GRID ================= */
+
+.made {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.made > div {
+    position: relative;
+    padding: 36px 32px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.made > div:nth-child(odd) {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.made > div:nth-child(3),
+.made > div:nth-child(4) {
+    border-bottom: none;
+}
+
+/* ================= STAT TOP ================= */
+
+.sts-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sts-nav img {
+    width: 28px;
+    height: 28px;
+}
+
+.sts-nav h1 {
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+/* ================= STAT BOTTOM ================= */
+
+.sts-btn {
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    bottom: 34px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sts-btn .he {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.sts-btn .content {
+    margin-top: 4px;
+
+    font-size: 14px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* ================= FOOTER ================= */
+
+.bottom {
+    height: 73px;
+    padding: 0 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.bottom span {
+    font-size: 14px;
+}
+
+/* ================= MENU ================= */
+
+.menu-hover {
+    position: fixed;
+
+    top: 72px;
+    right: 0;
+
+    width: 396px;
+    height: calc(100vh - 72px);
+
+    background: #2f55f5;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-top: 55px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.2s ease;
+}
+
+.menu-hover ul {
+    list-style: none;
+    text-align: center;
+}
+
+.menu-hover li {
+    margin-bottom: 14px;
+}
+
+.menu-hover a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 30px;
+    line-height: 1.15;
+}
+
+.menu-hover a:hover {
+    text-decoration: underline;
+}
+
+/* Show menu when hovering hamburger */
+
+.menu-wrap:hover .menu-hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 500px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .made {
+        min-height: 500px;
+    }
+
+    .hero .he h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 24px;
+    }
+
+    .hero {
+        padding: 60px 24px;
+    }
+
+    .hero .he h1 {
+        font-size: 42px;
+    }
+
+    .made {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 250px);
+    }
+
+    .made > div {
+        border-right: none !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+    }
+
+    .bottom {
+        padding: 0 24px;
+    }
+
+    .menu-hover {
+        width: 100%;
+    }
+}
