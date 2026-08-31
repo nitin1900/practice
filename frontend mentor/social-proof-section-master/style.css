@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "League Spartan";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 100%; 
+    max-width: 1110px;
+    gap: 70px;
+    margin: 0 auto;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.feed {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.content h1{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    max-width: 445px;
+    font-size: 50px;
+}
+
+.content p{
+    color: hsl(303, 10%, 53%);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.r1, .r2, .r3{
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    width: 370px;
+}
+
+.r1{
+    align-self: flex-start;
+    margin-left: 0;
+}
+
+.r2{
+    align-self: center;
+    margin-left: 3rem;
+}
+
+.r3{
+    align-self: flex-end;
+    margin-left: 6rem;
+}
+
+.r1, .r2, .r3 p{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.f1, .f2, .f3{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.f1{
+    transform: translateY(0);
+}
+
+.f2{
+    transform: translateY(16px);
+}
+
+.f3{
+    transform: translateY(31px);
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.profile img{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.text, .profile span h3{
+    color: white;
+}
+
+.profile span p{
+    color: hsl(333, 80%, 67%);
+    font-weight: 500;
+}
+
+
+/* from ai below code i still don't know how to make website responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 4rem 1.5rem;
+        min-height: auto;
+    }
+
+    .hero {
+        grid-template-columns: 1fr; /* stacks content and review vertically */
+        text-align: center;
+    }
+
+    .feed {
+        grid-template-columns: 1fr; /* stacks cards vertically */
+    }
+
+    /* Reset the staircase offsets so everything is aligned centrally on mobile */
+    .r1, .r2, .r3 {
+        width: 100%;
+        margin-left: 0;
+        align-self: center;
+    }
+
+    .f1, .f2, .f3 {
+        transform: translateY(0);
+        margin-top: 0;
+    }
+}
