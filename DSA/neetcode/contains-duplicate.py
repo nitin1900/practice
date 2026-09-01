@@ -12,3 +12,4 @@ class Solution:
     def hasDuplicate(self, nums: List[int]) -> bool:
         return len(nums) != len(set(nums))
 
+#pattern: set -> Useful when I need to know whether I've seen something before.
