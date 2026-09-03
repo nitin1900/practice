@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans";
+}
+
+/* ai */
+body {
+    min-height: 100vh;
+    background-color: hsl(275, 100%, 97%);
+    background-image: url('assets/images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.card {
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+/* ai */
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.q1, .q2, .q3, .q4{
+    display: flex;
+}
