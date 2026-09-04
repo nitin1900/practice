@@ -1,4 +1,5 @@
 #my code but took the help of ai to heavely debug most things..
+#pattern: hashmap
 from collections import Counter
 
 class Solution:
