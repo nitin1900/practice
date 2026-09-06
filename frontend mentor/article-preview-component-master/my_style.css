@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Manrope";
+    font-size: 13px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: white;
+    gap: 2rem;
+    padding-right: 2rem;
+}
+
+/* section{
+    gap: 1rem;
+} */
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.headi{
+    color: hsl(217, 19%, 35%);
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.bod{
+    color: hsl(214, 17%, 51%);
+    line-height: 1.5;
+}
+
+.bg{
+    height: 250px;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.profile{
+    display: flex;
+    gap: 1rem;
+}
+
+.dp{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+}
+
+/* #special{
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    background-color: hsl(210, 46%, 95%);
+    padding: 0.25rem;
+    border-radius: 50%;
+} */
+
+#special {
+    /* by ai */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-left: auto;
+    background-color: hsl(210, 46%, 95%);
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
