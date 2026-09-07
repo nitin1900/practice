@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans';
+}
+
+body{
+    background-image: url('images/bg-pattern-desktop.svg');
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#bg{
+    align-self: flex-end;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4rem 10%;
+    max-width: 600px;
+}
+
+.orga{
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+
+.orgas{
+    color: hsl(0, 36%, 70%);
+}
+
+.nig{
+    color: hsl(0, 6%, 24%);
+    font-weight: 600;
+}
+
+.content p{
+    margin-top: 1rem;
+    font-size: 16px;
+    font-size: 3.5rem;
+    letter-spacing: 0.8rem;
+    line-height: 1.1;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    position:relative;
+    width: 100%;
+    max-width: 440px;
+}
+
+#email{
+    height: 48px;
+    border-radius: 30px;
+    padding: 0 1.5rem;
+    border: 1px solid hsl(0, 36%, 70%);
+    outline: none;
+    width: 100%;
+}
+
+#error{
+    display: none;
+}
+
+.arrow{
+    background-color: hsl(0, 93%, 68%);
+    /* border: none;
+    background: none; */
+    cursor: pointer;
+    height: 100%;
+    border-radius: 30px;
+    padding: 0.75rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

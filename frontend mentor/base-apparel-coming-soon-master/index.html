@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Base Apparel | Coming Soon</title>
+  
+  <!-- Google Fonts: Josefin Sans 300, 400, 600 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Left / Main Content Container -->
+    <main class="content-side">
+      <header class="header">
+        <img src="images/logo.svg" alt="Base Apparel" class="logo">
+      </header>
+
+      <!-- Mobile Hero Image -->
+      <div class="hero-mobile-container">
+        <img src="images/hero-mobile.jpg" alt="Fashion model posing in front of plants" class="hero-mobile-img">
+      </div>
+
+      <!-- Text & Form Section -->
+      <div class="main-content">
+        <h1 class="headline">
+          <span class="light">We're</span>
+          <span class="bold">coming</span>
+          <span class="bold">soon</span>
+        </h1>
+
+        <p class="description">
+          Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+
+        <form class="signup-form" id="newsletter-form" novalidate>
+          <div class="input-wrapper">
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="Email Address" 
+              aria-label="Email Address"
+              aria-describedby="error-message"
+            >
+            <img src="images/icon-error.svg" alt="" class="error-icon" aria-hidden="true">
+            <button type="submit" class="submit-btn" aria-label="Submit email address">
+              <img src="images/icon-arrow.svg" alt="" aria-hidden="true">
+            </button>
+          </div>
+          <p class="error-text" id="error-message">Please provide a valid email</p>
+        </form>
+      </div>
+    </main>
+
+    <!-- Desktop Hero Section -->
+    <aside class="hero-desktop-side">
+      <img src="images/hero-desktop.jpg" alt="Fashion model posing in front of plants" class="hero-desktop-img">
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
