@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(images/bg-intro-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins';
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 2rem;
+    color: white;
+}
+
+.premium, #form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    background-color: white;
+    color: hsl(0, 100%, 74%);
+}
+
+/* ai */
+.error-icon,
+.error-text {
+    display: none;
+}
+
+/* When the parent has the error class, show the hidden items */
+.field.error .error-icon,
+.field.error .error-text {
+    display: block;
+}
+
+/* And give the input a red border */
+.field.error input {
+    border: 2px solid hsl(0, 100%, 74%);
+}
+/* ai */

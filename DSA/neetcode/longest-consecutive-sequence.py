@@ -1,4 +1,5 @@
 #my code...
+#pattern: "Find the beginning of a sequence."
 nums = [2,20,4,10,3,4,5]
 val={}
 dum=sorted(set(nums))
