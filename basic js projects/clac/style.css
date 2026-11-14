@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    background-color: #000000;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #142f44;
+}
+
+.display {
+    align-self: flex-end;
+}
+
+button {
+    padding: 10px;
+}
+
+.operator {
+    background-color: #205b7a;
+}
+
+.btn-clear {
+    background-color: #1d3849;
+}
+
+.btn-equal {
+    background-color: #a2bbcf;
+}
+
+.btn-zero {
+    width: 50%;
+}
